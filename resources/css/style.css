@@ -31,6 +31,7 @@ header {
     z-index: 1;
     padding: 1rem 2rem;
     border-bottom: 1px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header img {
@@ -51,6 +52,7 @@ header img {
     background-size: cover;
     width: 100%;
     height: 640px;
+    display: flex;
     /* background-color: aquamarine; */
 }
 
@@ -98,16 +100,21 @@ h2 {
 
 /* Skills section */
 
-.text-container {
-    background-color: aliceblue;
-}
-
 #skills .container {
     display: flex;
     flex-wrap: wrap;
 }
 
-div img {
+.desc {
+    background-color: aliceblue;
+}
+
+#skills .container img {
     height: auto;
     width: 200px;
+    border: 1px sold red;
+}
+
+@media only screen and (max-width: 500px) {
+    justify-contents: end;
 }
